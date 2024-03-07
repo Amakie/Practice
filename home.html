@@ -4,6 +4,13 @@
         <title>Home</title>
         <script>
             function hello() {
+                if (document.querySelector('h1').innerHTML === 'Hi') 
+                {document.querySelector('h1').innerHTML = 'Goodbye';}
+                else {
+                    document.querySelector('h1').innerHTML = 'Hi';
+                }
+            }
+            function hello() {
                 alert('hello, world');
             }
         </script>
