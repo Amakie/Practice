@@ -1,10 +1,17 @@
-//Modules
-const names = require('./4-names')
-const sayHi = require('./5-utils')
-const items = require('./6-alternative-flavors')
-console.log(data)
+const os = require('os')
 
+//info about current user
+const user = os.userInfo()
+console.log(user)
 
-sayHi('Susan')
-sayHi(names.john)
-sayHi(names.peter)
+//uptime of system in seconds
+console.log(`system uptime of user is ${os.uptime} seconds`)
+
+const currentOS = {
+    name: os.type(),
+    release: os.release(),
+    totalMem: os.totalmem(),
+    freeMem: os.freemem(),
+}
+
+console.log(currentOS)
